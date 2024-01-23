@@ -34,6 +34,9 @@ Synthetic Dataset Generation: Synthetic datasets were generated using our data d
 #### Key Results
 MNIST Dataset: The test accuracy on the synthetic data was 0.91387, slightly lower than the original data's accuracy of 0.9938. This drop could be attributed to an inappropriate trajectory range during the early epochs of data distillation.
 MHIST Dataset: For MHIST, the test accuracy on the synthetic data was 0.80348, surpassing the original data's accuracy of 0.7687. This indicates the efficiency of the synthetic dataset, especially in higher Information Per Class (IPC) settings.
+![1705970856097](https://github.com/EricFeng20001120/DataDistillationMHIST/assets/55144601/8e7b2b07-623d-4a63-911e-a0087221bb31)
+![1705970912899](https://github.com/EricFeng20001120/DataDistillationMHIST/assets/55144601/f56dbbfd-8a31-4c07-abd0-f13f613ab323)
+
 
 ### Conclusion
 In the intricate dance of machine learning, data distillation, loss minimization, and expert trajectories play pivotal roles. Together, they create a synergy that drives forward the development of intelligent, efficient, and effective models. As we continue to push the boundaries of what's possible with AI, understanding and leveraging these concepts will be key to unlocking new and exciting advancements.
