@@ -24,14 +24,14 @@ be much faster to perform Neural Architecture Search.
 ### Experiments and Results: Evaluating Data Distillation Techniques
 To empirically validate the efficacy of our advanced data distillation techniques, we conducted a series of experiments focusing on Gradient Matching, Temperature Tuning in Softmax, and Difficulty-Aligned Trajectory Matching (DATM).
 
-#### Experiment Setup
+**Experiment Setup**
 Datasets: The experiments utilized the MNIST and MHIST datasets, chosen for their distinct challenges.
 Models: A range of models including ConvNet, AlexNet, VGG11, and ResNet18 were used to ensure a broad evaluation.
-#### Experiment Procedure and Observations
+**Experiment Procedure and Observations**
 Baseline Performance: Models were initially trained on the original datasets to establish baseline performance metrics.
 Synthetic Dataset Generation: Synthetic datasets were generated using our data distillation techniques, particularly focusing on Gradient Matching and DATM.
-#### Evaluation on Distilled Data: Models were then trained using these synthetic datasets, and their performance was compared against the baseline models.
-#### Key Results
+Evaluation on Distilled Data: Models were then trained using these synthetic datasets, and their performance was compared against the baseline models.
+**Key Results**
 MNIST Dataset: The test accuracy on the synthetic data was 0.91387, slightly lower than the original data's accuracy of 0.9938. This drop could be attributed to an inappropriate trajectory range during the early epochs of data distillation.
 MHIST Dataset: For MHIST, the test accuracy on the synthetic data was 0.80348, surpassing the original data's accuracy of 0.7687. This indicates the efficiency of the synthetic dataset, especially in higher Information Per Class (IPC) settings.
 ![1705970856097](https://github.com/EricFeng20001120/DataDistillationMHIST/assets/55144601/8e7b2b07-623d-4a63-911e-a0087221bb31)
@@ -40,4 +40,15 @@ MHIST Dataset: For MHIST, the test accuracy on the synthetic data was 0.80348, s
 
 ### Conclusion
 In the intricate dance of machine learning, data distillation, loss minimization, and expert trajectories play pivotal roles. Together, they create a synergy that drives forward the development of intelligent, efficient, and effective models. As we continue to push the boundaries of what's possible with AI, understanding and leveraging these concepts will be key to unlocking new and exciting advancements.
+
+### Reference
+[1] B. Zhao, K. R. Mopuri, and H. Bilen, “Dataset condensation with
+gradient matching,” arXiv.org, https://arxiv.org/abs/2006.05929
+(accessed Nov. 27, 2023).
+[2] Z. Guo et al., “Towards lossless dataset distillation via difficulty-
+aligned trajectory matching,” arXiv.org,
+https://arxiv.org/abs/2310.05773 (accessed Nov. 27, 2023).
+[3] [1] “GSAM,” Google Sites: Sign-in,
+https://sites.google.com/view/gsam-iclr22/home (accessed Nov. 27,
+2023)
 
